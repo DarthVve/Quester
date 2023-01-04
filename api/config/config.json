@@ -1,0 +1,9 @@
+{
+  "development": {
+    "username": "quester",
+    "password": "questerdbG8",
+    "database": "questerdb",
+    "host": "localhost",
+    "dialect": "mysql"
+  }
+}
