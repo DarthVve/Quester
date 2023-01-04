@@ -1,10 +1,11 @@
 import { DataTypes, Model } from "sequelize";
-import db from "../db/db.config";
-
+import DB from '../db/database.config';
 interface ReplyAttributes {
     id: string;
     content: string;
     postId: string;
+    createdAt: Date;
+    updatedAt: Date;
 }
 
 export class ReplyInstance extends Model<ReplyAttributes> { };
@@ -30,9 +31,17 @@ ReplyInstance.init({
     postId: {
         type: DataTypes.STRING,
         allowNull: false
+    },
+    createdAt: {
+        type: DataTypes.DATE,
+        allowNull: false
+    },
+    updatedAt: {
+        type: DataTypes.DATE,
+        allowNull: false
     }
 }, {
-    sequelize: db,
+    sequelize: DB,
     tableName: "REPLY"
 }
 );

@@ -3,8 +3,10 @@ import createError from 'http-errors';
 import path from 'path';
 import cookieParser from 'cookie-parser';
 import logger from 'morgan';
-import indexRouter from './routes/index';
 import usersRouter from './routes/users';
+import postRouter from "./routes/postRoutes";
+import replyRouter from "./routes/replyRoutes";
+import journalRouter from "./routes/journalRoutes";
 import DB from "./db/database.config";
 
 DB.authenticate()
@@ -21,8 +23,11 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '..', 'public')));
 
-app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use("/posts", postRouter);
+app.use("reply", replyRouter);
+app.use("journals", journalRouter);
+
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

@@ -1,14 +1,15 @@
 import { DataTypes, Model } from "sequelize";
-import db from "../db/db.config";
+import DB from '../db/database.config';
 
-interface JournalAttributes {
+interface Journal {
     id: string;
     title: string;
     description: string;
-    journal: Blob;
+    name: string;
+    userId: string;
 }
 
-export class JournalInstance extends Model<JournalAttributes> { };
+export class JournalInstance extends Model<Journal> { };
 
 JournalInstance.init({
     id: {
@@ -20,41 +21,27 @@ JournalInstance.init({
         type: DataTypes.STRING,
         allowNull: false,
         validate: {
-            notNull: {
-                msg: "Title is required"
-            },
-            notEmpty: {
-                msg: "Please provide a title"
-            }
+            notNull: { msg: "Title Required" },
+            notEmpty: { msg: "Enter a Title" }
         }
     },
     description: {
         type: DataTypes.STRING,
         allowNull: false,
         validate: {
-            notNull: {
-                msg: "Description is required"
-            },
-            notEmpty: {
-                msg: "Please provide a description"
-            }
+            notNull: { msg: "Description Required" },
+            notEmpty: { msg: "Enter a Description" }
         }
     },
-    journal: {
-        type: DataTypes.BLOB,
-        allowNull: false,
-        validate: {
-            notNull: {
-                msg: "PDF is required"
-            },
-            notEmpty: {
-                msg: "Please provide a PDF"
-            }
-        }
+    name: {
+        type: DataTypes.STRING,
+        allowNull: true
+    },
+    userId: {
+        type: DataTypes.STRING,
+        allowNull: false
     }
-},
-    {
-        sequelize: db,
-        tableName: "JOURNAL"
-    }
-);
+}, {
+    sequelize: DB,
+    tableName: 'JOURNALS'
+})

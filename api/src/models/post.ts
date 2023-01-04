@@ -1,5 +1,5 @@
 import { DataTypes, Model } from "sequelize";
-import db from "../db/db.config";
+import DB from '../db/database.config';
 import { ReplyInstance } from './reply';
 
 
@@ -7,6 +7,8 @@ interface PostAttributes {
     id: string;
     content: string;
     userId: string;
+    createdAt: Date;
+    updatedAt: Date;
 }
 
 export class PostInstance extends Model<PostAttributes> { };
@@ -30,11 +32,19 @@ PostInstance.init({
         }
     },
     userId: {
-        type: DataTypes.STRING,
+        type: DataTypes.UUIDV4,
+        allowNull: false
+    },
+    createdAt: {
+        type: DataTypes.DATE,
+        allowNull: false
+    },
+    updatedAt: {
+        type: DataTypes.DATE,
         allowNull: false
     }
 }, {
-    sequelize: db,
+    sequelize: DB,
     tableName: "POSTS"
 }
 );
