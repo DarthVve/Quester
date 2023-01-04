@@ -1,0 +1,15 @@
+.dashboard-container {
+    display: flex;
+    width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    .dashboard-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        /* height: ; */
+    }
+}

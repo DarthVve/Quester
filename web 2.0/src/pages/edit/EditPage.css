@@ -1,0 +1,10 @@
+.edit-container {
+    width: 100%;
+    background: var(--gradient-edit);
+    padding: 20px;
+    height: 100vh;
+}
+
+#hidden {
+    display: none;
+}

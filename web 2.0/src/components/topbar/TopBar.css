@@ -1,0 +1,161 @@
+.topbar-container {
+    height: 50px;
+    width: 100%;
+    background-color: var(--color-footer);
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.topbar-left {
+    flex: 3;
+}
+
+.topbar-center {
+    flex: 4;
+}
+
+.topbar-right {
+    flex: 5;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #fff;
+}
+
+.logo {
+    font-size: 24px;
+    margin-left: 50px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+
+.searchbar {
+    width: 100%;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.search-icon {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.searchinput {
+    border: none;
+    width: 70%;
+    margin-left: 10px;
+}
+
+.searchinput:focus {
+    outline: none;
+}
+
+.topbar-link {
+    margin-right: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    font-family: var(--font-family);
+}
+
+.topbar-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topbar-icons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.edit {
+    background-color: gray;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 30px;
+    columns: white;
+}
+
+.topbar-icon-item {
+    margin-right: 15px;
+    position: relative;
+    font-size: 18px;
+}
+
+.topbar-icon-badge {
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    color: #fff;
+    top: -5px;
+    right: -5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.topbar-image {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    margin-right: 20px;
+    transition: filter 300ms;
+}
+
+.topbar-image:hover {
+    filter: brightness(1.2);
+}
+
+.username {
+    margin-right: 20px;
+    font-size: 20px;
+    font-family: var(--font-family);
+}
+
+.arrow {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.drop-down {
+    position: absolute;
+    top: 45px;
+    width: 270px;
+    background-color: var(--color-blog);
+    padding: 1rem;
+    transform: translateX(-5%);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.dropdown-text {
+    padding: 15px;
+    transition: filter 300ms;
+    border-radius: 15px;
+    margin-bottom: 2px;
+    font-family: var(--font-family);
+}
+
+.dropdown-text:hover {
+    background-color: var(--color-text);
+    color: var(--color-footer);
+}
+
+.r-icon {
+    margin-right: 10px;
+    font-size: 20px;
+}

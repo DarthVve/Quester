@@ -1,0 +1,61 @@
+.base-container {
+    width: 400px;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+    background: var(--gradient-bar);
+    padding: 40px;
+    margin: 60px auto;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.header h1 {
+    margin-bottom: 30px;
+    color: var(--color-bg);
+    font-style: var(--font-family);
+}
+
+.field {
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    color: var(--color-text);
+    border: 2px solid var(--color-bg);
+    outline: none;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--color-btn);
+    color: #fff;
+    border-radius: 20px;
+    font-size: 15px;
+    margin:  10px 0;
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+hr {
+    margin-top: 20px;
+    width: 100%;
+    margin: auto;
+    border: 1px solid var(--color-footer);
+}
+
+.account {
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+
+.agreement {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.signin-image {
+    width: 100px;
+    margin-top: 2px;
+}

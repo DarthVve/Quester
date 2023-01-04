@@ -1,0 +1,41 @@
+.verification-container {
+
+
+    position: absolute;
+    top: 80px;
+    left: 520px;
+    background: var(--gradient-feed);
+    width: 400px;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+    padding: 40px;
+    margin: 60px auto;
+    margin-bottom: 60px;
+    text-align: center;
+
+}
+
+.h1-text {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.licenceBox {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+label {
+    margin-right: 10px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.verification-field {
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    color: var(--color-text);
+    border: 2px solid var(--color-bg);
+    outline: none;
+}

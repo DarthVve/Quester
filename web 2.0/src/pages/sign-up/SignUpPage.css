@@ -1,0 +1,31 @@
+.text {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    margin: 200px;
+}
+
+#navbar-props {
+    background-color: var(--color-footer)
+}
+
+#signup {
+    display: none;
+}
+
+#signin {
+    border: 2px solid var(--color-btn);
+    padding: 6px 10px;
+    border-radius: 10px;
+}
+
+#signin:hover {
+    border: 0;
+    background-color: var(--color-btn);
+    transition: 0.3s ease-in;
+}
+
+
+
+

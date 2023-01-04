@@ -1,0 +1,141 @@
+.post {
+    width: 100%;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 16px -8px rgba(0,0,0,0.68); 
+    box-shadow: 0px 0px 16px -8px rgba(0,0,0,0.68);
+    margin: 30px 0;
+    background-color: #fff;
+}
+
+.post-wrapper {
+    padding: 10px;
+}
+
+.post-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.post-top-left {
+    display: flex; 
+    align-items: center;
+}
+
+.post-profile-picture {
+    width: 32px;
+    height: 32px;
+}
+
+.post-username {
+    font-size: 15px;
+     font-weight: 500;
+     margin: 0 10px;
+}
+
+.post-time {
+    font-size: 12px; 
+}
+
+.post-center {
+   margin: 20px 0; 
+}
+
+.post-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.post-bottom-left {
+     display: flex;
+     align-items: center; 
+}
+
+.post-bottom-right {
+    display: flex;
+    align-items: center; 
+}
+
+.like-image {
+    margin-right: 5px;
+    cursor: pointer;
+    width: 23px;
+    border-radius: 10px;
+
+}
+
+.heart-image {
+    margin-right: 5px;
+    cursor: pointer;
+    width: 23px;
+    border-radius: 10px;
+
+}
+
+.post-like-counter {
+    font-size: 15px ;
+}
+
+.post-comment-text {
+    cursor: pointer;
+    border-bottom: 1px dashed gray;
+    font-size: 15px;
+}
+
+.reply-btn {
+    background-color: rgb(110, 171, 18);
+    padding: 5px 20px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.comment-btn {
+    background-color: var(--color-btn);
+    padding: 5px 20px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.reply-active {
+    display: block;
+    /* visibility: visible; */
+    background-color: #fff;
+    padding: 5px;
+    width: 60%;
+    margin-left: 15rem;
+    margin-top: 0.5rem;
+    border-radius: 10px;
+    border: 2px solid var(--color-complement);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reply-inactive {
+    display: none;
+    /* visibility: hidden; */
+}
+
+.reply-input {
+    width: 350px;
+    outline: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

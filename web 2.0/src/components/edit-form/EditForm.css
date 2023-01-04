@@ -1,0 +1,30 @@
+/* form {
+    width: 400px;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+    background: var(--gradient-feed);
+    padding: 40px;
+    margin: 100px auto;
+    margin-bottom: 60px;
+    text-align: center;
+} */
+
+.editform-container {
+    position: absolute;
+    top: 80px;
+    left: 520px;
+    background: var(--gradient-feed);
+    width: 400px;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+    padding: 40px;
+    margin: 60px auto;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.edit-header h1 {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: var(--color-bg);
+    font-family: var(--font-family2);
+    letter-spacing: 3px;
+}

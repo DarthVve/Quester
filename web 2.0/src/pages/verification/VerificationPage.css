@@ -1,0 +1,16 @@
+.verification {
+    font-size: 20px;
+    background: var(--gradient-edit);
+    height: calc(100vh - 50px);
+    position: absolute;
+    top: 50px;
+    width: 100%;
+}
+
+#verify-hide {
+    display: none;
+}
+
+.form-container {
+    padding: 20px;
+}
